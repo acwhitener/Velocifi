@@ -1,0 +1,9 @@
+Flask
+dash
+dash-bootstrap-components
+pandas
+python-dotenv
+flask-cors
+flask_sqlalchemy
+gunicorn           # For production deployments (optional, safe to include)
+requests           # For Plaid API calls (required)

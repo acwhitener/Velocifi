@@ -1,0 +1,67 @@
+/* style.css */
+
+/* Global font and background */
+body {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+/* Velocifi theme colors */
+:root {
+    --gold: #d4af37;
+    --velocifi-purple: #8e44ad;
+    --velocifi-accent: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--gold);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #111 !important;
+    border-bottom: 2px solid var(--gold);
+}
+.navbar .nav-link, .navbar-brand {
+    color: white !important;
+}
+.navbar .nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* Buttons */
+.btn {
+    background: var(--velocifi-accent);
+    color: white;
+    border: none;
+}
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+/* DataTable */
+.dash-table-container .dash-spreadsheet {
+    background-color: #121212;
+    color: #f5f5f5;
+    border: none;
+}
+.dash-spreadsheet-container .dash-header {
+    background-color: #1a1a1a;
+    color: var(--gold);
+}
+
+/* Cards */
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Loading Spinner */
+.dash-spinner > div {
+    border-top-color: var(--velocifi-purple);
+}

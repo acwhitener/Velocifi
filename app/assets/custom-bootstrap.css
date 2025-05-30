@@ -1,0 +1,139 @@
+/* Velocifi Custom Bootstrap Theme */
+
+/* Font */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #f5f5f5;
+}
+
+/* Primary Colors */
+:root {
+  --bs-primary: #6A0DAD;
+  --bs-secondary: #FFD700;
+  --bs-success: #28a745;
+  --bs-info: #17a2b8;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #000000;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--bs-dark);
+  border-bottom: 1px solid var(--bs-primary);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--bs-secondary) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: #5a0ca5;
+  border-color: #5a0ca5;
+}
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  color: #000;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #e6c200;
+}
+
+/* Cards */
+.card {
+  background-color: #111;
+  border: 1px solid #333;
+  color: #f5f5f5;
+}
+.card-header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+/* Tables */
+.table {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+.table thead {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Inputs */
+.form-control,
+.input-group-text {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  border: 1px solid #333;
+}
+
+/* Rainbow Gradient Accent */
+.gradient-text {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Make the navbar gold-accented and sleek */
+.navbar {
+  padding: 0.75rem 2rem;
+  border-bottom: 2px solid #d4af37;
+  background-color: #0d0d0d !important;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #d4af37 !important;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #d4af37 !important;
+}
+.navbar-brand:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.glow-logo {
+  animation: pulseGlow 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #ffd700);
+}
+
+@keyframes pulseGlow {
+  0% {
+    filter: drop-shadow(0 0 6px #ffd700);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px #ffd700);
+  }
+  100% {
+    filter: drop-shadow(0 0 6px #ffd700);
+  }
+}
+
+/* Optional: match text to logo */
+.navbar-brand-text {
+  font-weight: bold;
+  color: #ffd700 !important;
+  font-size: 1.25rem;
+}
